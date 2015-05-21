@@ -7,18 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UiSwipeViewController.h"
+#import "AppEventsController.h"
 
-typedef NS_ENUM(NSInteger, AppEvent) {
-    AppEventRegistration,
-    AppEventTutorial,
-    AppEventPurchase,
-    AppEventLevel,
-    AppEventAchievement,
-    AppEventSpendCredits,
-    AppEventCustomEvents
-};
-
-@interface AppEventsControllerGame : UiSwipeViewController
+@interface AppEventsControllerGame : AppEventsController
 @end
 

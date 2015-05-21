@@ -18,6 +18,7 @@
 		FBA5CDC01ADE68340099E5A4 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA5CDBF1ADE68340099E5A4 /* PickerViewController.m */; };
 		FBC06F1C1ADED33F002CC1F5 /* UiSwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC06F1B1ADED33F002CC1F5 /* UiSwipeViewController.m */; };
 		FBC4E5301B0DB4F90041BFC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC4E52F1B0DB4F90041BFC1 /* UIKit.framework */; };
+		FBC4E5331B0E364A0041BFC1 /* AppEventsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC4E5321B0E364A0041BFC1 /* AppEventsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		FBC06F1A1ADED33F002CC1F5 /* UiSwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiSwipeViewController.h; sourceTree = "<group>"; };
 		FBC06F1B1ADED33F002CC1F5 /* UiSwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UiSwipeViewController.m; sourceTree = "<group>"; };
 		FBC4E52F1B0DB4F90041BFC1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FBC4E5311B0E364A0041BFC1 /* AppEventsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppEventsController.h; sourceTree = "<group>"; };
+		FBC4E5321B0E364A0041BFC1 /* AppEventsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppEventsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,14 +79,16 @@
 			children = (
 				FB5EBC411AD3A9FA002E529B /* AppDelegate.h */,
 				FB5EBC421AD3A9FA002E529B /* AppDelegate.m */,
+				FBC4E5311B0E364A0041BFC1 /* AppEventsController.h */,
+				FBC4E5321B0E364A0041BFC1 /* AppEventsController.m */,
 				FB5EBC441AD3A9FA002E529B /* AppEventsControllerApp.h */,
 				FB5EBC451AD3A9FA002E529B /* AppEventsControllerApp.m */,
+				FB5EBC471AD3A9FA002E529B /* AppEventsControllerGame.h */,
+				FB5EBC481AD3A9FA002E529B /* AppEventsControllerGame.m */,
 				FBA5CDBE1ADE68340099E5A4 /* PickerViewController.h */,
 				FBA5CDBF1ADE68340099E5A4 /* PickerViewController.m */,
 				FBC06F1A1ADED33F002CC1F5 /* UiSwipeViewController.h */,
 				FBC06F1B1ADED33F002CC1F5 /* UiSwipeViewController.m */,
-				FB5EBC471AD3A9FA002E529B /* AppEventsControllerGame.h */,
-				FB5EBC481AD3A9FA002E529B /* AppEventsControllerGame.m */,
 				FB5EBC4A1AD3A9FA002E529B /* Main.storyboard */,
 				FB5EBC4D1AD3A9FA002E529B /* Images.xcassets */,
 				FB5EBC4F1AD3A9FA002E529B /* LaunchScreen.xib */,
@@ -186,6 +191,7 @@
 				FB5EBC461AD3A9FA002E529B /* AppEventsControllerApp.m in Sources */,
 				FBA5CDC01ADE68340099E5A4 /* PickerViewController.m in Sources */,
 				FB5EBC401AD3A9FA002E529B /* main.m in Sources */,
+				FBC4E5331B0E364A0041BFC1 /* AppEventsController.m in Sources */,
 				FBC06F1C1ADED33F002CC1F5 /* UiSwipeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
