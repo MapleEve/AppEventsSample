@@ -17,95 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of1-0X-G2d">
-                                <rect key="frame" x="46" y="41" width="169" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Registration">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleEvent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Pwr-oj-fUu"/>
-                                    <action selector="handleEvent:" destination="9pv-A4-QxB" eventType="touchUpInside" id="lj3-oi-SCy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJm-Lj-R1k">
-                                <rect key="frame" x="46" y="83" width="169" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Search">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleEvent:" destination="9pv-A4-QxB" eventType="touchUpInside" id="04K-GR-Md3"/>
-                                    <action selector="handleEvent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="toH-Fe-zG1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpW-uK-kpK">
-                                <rect key="frame" x="46" y="125" width="169" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="View Content">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleEvent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="76e-yN-P36"/>
-                                    <action selector="handleEvent:" destination="9pv-A4-QxB" eventType="touchUpInside" id="FZw-CX-h5t"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eC7-hY-4C7">
-                                <rect key="frame" x="46" y="167" width="169" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Add to wishlist">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleEvent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="P6W-Nf-PJ6"/>
-                                    <action selector="handleEvent:" destination="9pv-A4-QxB" eventType="touchUpInside" id="jSy-uy-s8u"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9R-ft-2xw">
-                                <rect key="frame" x="46" y="209" width="169" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Add to cart">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleEvent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ITw-Ct-7oG"/>
-                                    <action selector="handleEvent:" destination="9pv-A4-QxB" eventType="touchUpInside" id="yOR-4l-xdg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9J-uo-est">
-                                <rect key="frame" x="46" y="251" width="169" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Purchase">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleEvent:" destination="9pv-A4-QxB" eventType="touchUpInside" id="AQJ-OX-q4s"/>
-                                    <action selector="handleEvent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="y17-Ns-zxb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWO-6d-avG">
-                                <rect key="frame" x="46" y="293" width="169" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Add Payment Info">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleEvent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="OeQ-M1-nRV"/>
-                                    <action selector="handleEvent:" destination="9pv-A4-QxB" eventType="touchUpInside" id="f3Q-ov-shW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1M-RQ-yuU">
-                                <rect key="frame" x="46" y="335" width="169" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Rated">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleEvent:" destination="9pv-A4-QxB" eventType="touchUpInside" id="CqF-wn-aJo"/>
-                                    <action selector="handleEvent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="wgz-BW-fe9"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jo9-sJ-f1O">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jo9-sJ-f1O">
                                 <rect key="frame" x="16" y="505" width="568" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="4Pf-Dk-j1z"/>
@@ -114,12 +26,165 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of1-0X-G2d">
+                                <rect key="frame" x="216" y="137" width="169" height="33"/>
+                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Registration"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMasksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleEvent:" destination="9pv-A4-QxB" eventType="touchUpInside" id="lj3-oi-SCy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJm-Lj-R1k">
+                                <rect key="frame" x="216" y="178" width="169" height="34"/>
+                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMasksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleEvent:" destination="9pv-A4-QxB" eventType="touchUpInside" id="04K-GR-Md3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpW-uK-kpK">
+                                <rect key="frame" x="216" y="220" width="169" height="34"/>
+                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="View Content">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMasksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleEvent:" destination="9pv-A4-QxB" eventType="touchUpInside" id="FZw-CX-h5t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eC7-hY-4C7">
+                                <rect key="frame" x="216" y="262" width="169" height="34"/>
+                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="169" id="Eh1-J8-4Ss"/>
+                                </constraints>
+                                <state key="normal" title="Add to wishlist">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMasksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleEvent:" destination="9pv-A4-QxB" eventType="touchUpInside" id="jSy-uy-s8u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9R-ft-2xw">
+                                <rect key="frame" x="216" y="304" width="169" height="34"/>
+                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Add to cart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMasksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleEvent:" destination="9pv-A4-QxB" eventType="touchUpInside" id="yOR-4l-xdg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9J-uo-est">
+                                <rect key="frame" x="216" y="346" width="169" height="34"/>
+                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Purchase">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMasksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleEvent:" destination="9pv-A4-QxB" eventType="touchUpInside" id="AQJ-OX-q4s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWO-6d-avG">
+                                <rect key="frame" x="216" y="388" width="169" height="34"/>
+                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Add Payment Info">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMasksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleEvent:" destination="9pv-A4-QxB" eventType="touchUpInside" id="f3Q-ov-shW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1M-RQ-yuU">
+                                <rect key="frame" x="216" y="430" width="169" height="34"/>
+                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Rated">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMasksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleEvent:" destination="9pv-A4-QxB" eventType="touchUpInside" id="CqF-wn-aJo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="FJm-Lj-R1k" secondAttribute="centerX" id="5S2-4U-NDc"/>
+                            <constraint firstItem="eC7-hY-4C7" firstAttribute="top" secondItem="JpW-uK-kpK" secondAttribute="bottom" constant="8" symbolic="YES" id="8rV-GK-rfW"/>
+                            <constraint firstItem="K9J-uo-est" firstAttribute="top" secondItem="j9R-ft-2xw" secondAttribute="bottom" constant="8" symbolic="YES" id="ANN-7S-Tpg"/>
+                            <constraint firstItem="JpW-uK-kpK" firstAttribute="top" secondItem="FJm-Lj-R1k" secondAttribute="bottom" constant="8" symbolic="YES" id="BJg-Zv-nZP"/>
+                            <constraint firstItem="FJm-Lj-R1k" firstAttribute="top" secondItem="Of1-0X-G2d" secondAttribute="bottom" constant="8" symbolic="YES" id="EZP-NI-X4e"/>
+                            <constraint firstItem="eC7-hY-4C7" firstAttribute="leading" secondItem="K9J-uo-est" secondAttribute="leading" id="F1y-ta-I5I"/>
+                            <constraint firstItem="eC7-hY-4C7" firstAttribute="leading" secondItem="FJm-Lj-R1k" secondAttribute="leading" id="FBU-f9-SID"/>
+                            <constraint firstItem="eC7-hY-4C7" firstAttribute="leading" secondItem="j9R-ft-2xw" secondAttribute="leading" id="Goo-Vh-xRQ"/>
+                            <constraint firstAttribute="centerX" secondItem="eC7-hY-4C7" secondAttribute="centerX" id="Ju2-cW-lpv"/>
+                            <constraint firstAttribute="centerX" secondItem="K9J-uo-est" secondAttribute="centerX" id="MpN-mE-b3z"/>
+                            <constraint firstAttribute="centerX" secondItem="j9R-ft-2xw" secondAttribute="centerX" id="T2x-iw-rfT"/>
+                            <constraint firstItem="eC7-hY-4C7" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="262" id="TL8-g3-705"/>
+                            <constraint firstItem="j9R-ft-2xw" firstAttribute="top" secondItem="eC7-hY-4C7" secondAttribute="bottom" constant="8" symbolic="YES" id="Ual-of-ESk"/>
+                            <constraint firstAttribute="centerX" secondItem="HWO-6d-avG" secondAttribute="centerX" id="VYk-Iz-Sb1"/>
+                            <constraint firstItem="HWO-6d-avG" firstAttribute="top" secondItem="K9J-uo-est" secondAttribute="bottom" constant="8" symbolic="YES" id="Y8h-9Z-ccN"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Jo9-sJ-f1O" secondAttribute="bottom" constant="22" id="YjC-UJ-06g"/>
                             <constraint firstItem="Jo9-sJ-f1O" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="cqg-Zt-vq9"/>
+                            <constraint firstAttribute="centerX" secondItem="Of1-0X-G2d" secondAttribute="centerX" id="cw0-gU-rEO"/>
+                            <constraint firstItem="eC7-hY-4C7" firstAttribute="leading" secondItem="JpW-uK-kpK" secondAttribute="leading" id="hSH-ie-3rg"/>
+                            <constraint firstItem="eC7-hY-4C7" firstAttribute="leading" secondItem="HWO-6d-avG" secondAttribute="leading" id="hws-NC-Zj7"/>
+                            <constraint firstItem="eC7-hY-4C7" firstAttribute="leading" secondItem="Of1-0X-G2d" secondAttribute="leading" id="lh5-Xs-fgn"/>
+                            <constraint firstItem="eC7-hY-4C7" firstAttribute="leading" secondItem="K1M-RQ-yuU" secondAttribute="leading" id="r0s-Uo-mqB"/>
+                            <constraint firstItem="K1M-RQ-yuU" firstAttribute="top" secondItem="HWO-6d-avG" secondAttribute="bottom" constant="8" symbolic="YES" id="rdT-lJ-3KE"/>
+                            <constraint firstAttribute="centerX" secondItem="K1M-RQ-yuU" secondAttribute="centerX" id="xY1-YD-r1B"/>
                             <constraint firstItem="Jo9-sJ-f1O" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="yNI-ob-fUx"/>
+                            <constraint firstAttribute="centerX" secondItem="JpW-uK-kpK" secondAttribute="centerX" id="zyk-n4-H5t"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="App" image="first" id="acW-dT-cKf"/>
@@ -144,67 +209,103 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zt-0h-Ghd">
-                                <rect key="frame" x="46" y="28" width="169" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zt-0h-Ghd">
+                                <rect key="frame" x="216" y="136" width="169" height="34"/>
+                                <color key="backgroundColor" red="0.32110729896747647" green="0.55133423089059486" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Registration">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMasksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="handleEvent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="4f2-4r-Aix"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jn5-Gc-Wmu">
-                                <rect key="frame" x="46" y="70" width="169" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jn5-Gc-Wmu">
+                                <rect key="frame" x="216" y="178" width="169" height="34"/>
+                                <color key="backgroundColor" red="0.32110729896747647" green="0.55133423089059486" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Tutorial Step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMasksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="handleEvent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="B6E-bg-UMc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9M-5z-Nze">
-                                <rect key="frame" x="46" y="112" width="169" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9M-5z-Nze">
+                                <rect key="frame" x="216" y="220" width="169" height="34"/>
+                                <color key="backgroundColor" red="0.32110729896747647" green="0.55133423089059486" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Purchase">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMasksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="handleEvent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="LoY-iC-l09"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsa-4M-G9J">
-                                <rect key="frame" x="46" y="154" width="169" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsa-4M-G9J">
+                                <rect key="frame" x="216" y="262" width="169" height="34"/>
+                                <color key="backgroundColor" red="0.32110729896747647" green="0.55133423089059486" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Level Achieved">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMasksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="handleEvent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="qlJ-x9-Zr7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uro-pd-fOC">
-                                <rect key="frame" x="46" y="196" width="169" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uro-pd-fOC">
+                                <rect key="frame" x="216" y="304" width="169" height="34"/>
+                                <color key="backgroundColor" red="0.32110729896747647" green="0.55133423089059486" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Achievement">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMasksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="handleEvent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="mQl-RY-8ke"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1I-k4-9UL">
-                                <rect key="frame" x="46" y="238" width="169" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1I-k4-9UL">
+                                <rect key="frame" x="216" y="346" width="169" height="34"/>
+                                <color key="backgroundColor" red="0.32110729896747647" green="0.55133423089059486" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Spend Credits">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMasksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="handleEvent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="CQ8-TW-pvx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLU-2z-wzh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLU-2z-wzh">
                                 <rect key="frame" x="16" y="512" width="568" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="kPl-GG-QBw"/>
@@ -213,22 +314,34 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNF-Nc-2j8">
-                                <rect key="frame" x="46" y="280" width="169" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNF-Nc-2j8">
+                                <rect key="frame" x="216" y="388" width="169" height="34"/>
+                                <color key="backgroundColor" red="0.32110729896747647" green="0.55133423089059486" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Map Complete">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMasksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="handleEvent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Tz2-FS-Olp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wX-q1-VQ9">
-                                <rect key="frame" x="46" y="322" width="169" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wX-q1-VQ9">
+                                <rect key="frame" x="216" y="430" width="169" height="34"/>
+                                <color key="backgroundColor" red="0.32110729896747647" green="0.55133423089059486" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Spend Soft Currency">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layerMasksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="handleEvent:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="pXa-4d-JoQ"/>
                                 </connections>
@@ -236,9 +349,32 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="3wX-q1-VQ9" secondAttribute="centerX" id="4To-9i-6G4"/>
+                            <constraint firstAttribute="centerX" secondItem="gsa-4M-G9J" secondAttribute="centerX" id="5Oe-Uu-k8B"/>
+                            <constraint firstItem="gsa-4M-G9J" firstAttribute="leading" secondItem="0zt-0h-Ghd" secondAttribute="leading" id="6Q7-HB-99P"/>
+                            <constraint firstAttribute="centerX" secondItem="0zt-0h-Ghd" secondAttribute="centerX" id="70f-hq-FOX"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="PLU-2z-wzh" secondAttribute="bottom" constant="15" id="9Fs-le-x2E"/>
+                            <constraint firstAttribute="centerX" secondItem="R1I-k4-9UL" secondAttribute="centerX" id="AEh-hs-U2J"/>
+                            <constraint firstAttribute="centerX" secondItem="Jn5-Gc-Wmu" secondAttribute="centerX" id="AFV-5E-VOE"/>
                             <constraint firstItem="PLU-2z-wzh" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="Gp7-gr-Q8c"/>
+                            <constraint firstItem="uro-pd-fOC" firstAttribute="leading" secondItem="R1I-k4-9UL" secondAttribute="leading" id="Ibi-Lj-pM0"/>
+                            <constraint firstItem="uro-pd-fOC" firstAttribute="leading" secondItem="T9M-5z-Nze" secondAttribute="leading" id="JbP-9n-3mN"/>
+                            <constraint firstItem="0zt-0h-Ghd" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="116" id="LJN-6l-xx3"/>
+                            <constraint firstItem="gsa-4M-G9J" firstAttribute="top" secondItem="T9M-5z-Nze" secondAttribute="bottom" constant="8" symbolic="YES" id="Niz-Ey-pL7"/>
+                            <constraint firstItem="uro-pd-fOC" firstAttribute="leading" secondItem="CNF-Nc-2j8" secondAttribute="leading" id="NnF-x5-7Yc"/>
+                            <constraint firstItem="uro-pd-fOC" firstAttribute="top" secondItem="gsa-4M-G9J" secondAttribute="bottom" constant="8" symbolic="YES" id="Qcj-LN-KZy"/>
+                            <constraint firstItem="uro-pd-fOC" firstAttribute="leading" secondItem="Jn5-Gc-Wmu" secondAttribute="leading" id="Sbd-9e-qhd"/>
+                            <constraint firstAttribute="centerX" secondItem="uro-pd-fOC" secondAttribute="centerX" id="TNI-O9-Au2"/>
+                            <constraint firstAttribute="centerX" secondItem="T9M-5z-Nze" secondAttribute="centerX" id="VFg-Gy-C8b"/>
                             <constraint firstAttribute="centerX" secondItem="PLU-2z-wzh" secondAttribute="centerX" id="fZX-zS-MHs"/>
+                            <constraint firstItem="3wX-q1-VQ9" firstAttribute="top" secondItem="CNF-Nc-2j8" secondAttribute="bottom" constant="8" symbolic="YES" id="hbn-wS-2YF"/>
+                            <constraint firstItem="CNF-Nc-2j8" firstAttribute="top" secondItem="R1I-k4-9UL" secondAttribute="bottom" constant="8" symbolic="YES" id="mih-Hg-5gY"/>
+                            <constraint firstItem="R1I-k4-9UL" firstAttribute="top" secondItem="uro-pd-fOC" secondAttribute="bottom" constant="8" symbolic="YES" id="rzd-5p-MUA"/>
+                            <constraint firstItem="Jn5-Gc-Wmu" firstAttribute="top" secondItem="0zt-0h-Ghd" secondAttribute="bottom" constant="8" symbolic="YES" id="sG8-8R-30p"/>
+                            <constraint firstItem="uro-pd-fOC" firstAttribute="leading" secondItem="gsa-4M-G9J" secondAttribute="leading" id="txl-0e-c44"/>
+                            <constraint firstItem="T9M-5z-Nze" firstAttribute="top" secondItem="Jn5-Gc-Wmu" secondAttribute="bottom" constant="8" symbolic="YES" id="w9l-0w-rz5"/>
+                            <constraint firstItem="uro-pd-fOC" firstAttribute="leading" secondItem="3wX-q1-VQ9" secondAttribute="leading" id="xWg-t7-Gwl"/>
+                            <constraint firstAttribute="centerX" secondItem="CNF-Nc-2j8" secondAttribute="centerX" id="xcA-fw-w1S"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Game" image="second" id="cPa-gy-q4n"/>
