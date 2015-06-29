@@ -41,19 +41,11 @@
          */
         case AppEventRegistration:
         {
-            content = @[@{FBSDKAppEventParameterNameRegistrationMethod: @"R1001",
+            content = @[@{FBSDKAppEventParameterNameRegistrationMethod: @"Facebook",
                           FBSDKAppEventParameterNameDescription: @"Facebook"},
-                        @{FBSDKAppEventParameterNameRegistrationMethod: @"R1002",
-                          FBSDKAppEventParameterNameDescription: @"Google Play"},
-                        @{FBSDKAppEventParameterNameRegistrationMethod: @"R1003",
-                          FBSDKAppEventParameterNameDescription: @"Google+"},
-                        @{FBSDKAppEventParameterNameRegistrationMethod: @"R1004",
-                          FBSDKAppEventParameterNameDescription: @"Amazon"},
-                        @{FBSDKAppEventParameterNameRegistrationMethod: @"R1005",
-                          FBSDKAppEventParameterNameDescription: @"Apple Game Center"},
-                        @{FBSDKAppEventParameterNameRegistrationMethod: @"R1006",
+                        @{FBSDKAppEventParameterNameRegistrationMethod: @"Email",
                           FBSDKAppEventParameterNameDescription: @"Email"},
-                        @{FBSDKAppEventParameterNameRegistrationMethod: @"R1009",
+                        @{FBSDKAppEventParameterNameRegistrationMethod: @"Guest",
                           FBSDKAppEventParameterNameDescription: @"Guest"}];
         }
             break;
@@ -70,11 +62,7 @@
                         @{FBSDKAppEventParameterNameContentID: @"2",
                           FBSDKAppEventParameterNameDescription: @"Tutorial Step 2"},
                         @{FBSDKAppEventParameterNameContentID: @"3",
-                          FBSDKAppEventParameterNameDescription: @"Tutorial Step 3"},
-                        @{FBSDKAppEventParameterNameContentID: @"4",
-                          FBSDKAppEventParameterNameDescription: @"Tutorial Step 4"},
-                        @{FBSDKAppEventParameterNameContentID: @"5",
-                          FBSDKAppEventParameterNameDescription: @"Tutorial Step 5"}];
+                          FBSDKAppEventParameterNameDescription: @"Tutorial Step 3"}];
         }
             break;
             
@@ -86,26 +74,19 @@
             content = @[@{FBSDKAppEventParameterNameContentID: @"10001",
                           FBSDKAppEventParameterNameDescription: @"$1.99 - 100 gems",
                           FBSDKAppEventParameterNameCurrency: @"USD",
+                          FBSDKAppEventParameterNameContentType: @"Gems",
                           @"PlayerLevel":@"10",
                           @"Value":@1.99},
                         @{FBSDKAppEventParameterNameContentID: @"10002",
                           FBSDKAppEventParameterNameDescription: @"$9.99 - 600 gems",
                           FBSDKAppEventParameterNameCurrency: @"USD",
+                          FBSDKAppEventParameterNameContentType: @"Gems",
                           @"PlayerLevel":@"20",
                           @"Value":@9.99},
-                        @{FBSDKAppEventParameterNameContentID: @"10003",
-                          FBSDKAppEventParameterNameDescription: @"$19.99 - 1300 gems",
-                          FBSDKAppEventParameterNameCurrency: @"USD",
-                          @"PlayerLevel":@"30",
-                          @"Value":@19.99},
-                        @{FBSDKAppEventParameterNameContentID: @"10004",
-                          FBSDKAppEventParameterNameDescription: @"$49.99 - 3500 gems",
-                          FBSDKAppEventParameterNameCurrency: @"USD",
-                          @"PlayerLevel":@"40",
-                          @"Value":@49.99},
                         @{FBSDKAppEventParameterNameContentID: @"10005",
                           FBSDKAppEventParameterNameDescription: @"$99.99 - 7200 gems",
                           FBSDKAppEventParameterNameCurrency: @"USD",
+                          FBSDKAppEventParameterNameContentType: @"Gems",
                           @"PlayerLevel":@"50",
                           @"Value":@99.99}];
         }
@@ -121,11 +102,7 @@
                         @{FBSDKAppEventParameterNameLevel: @"2",
                           FBSDKAppEventParameterNameDescription: @"Player level 2"},
                         @{FBSDKAppEventParameterNameLevel: @"3",
-                          FBSDKAppEventParameterNameDescription: @"Player level 3"},
-                        @{FBSDKAppEventParameterNameLevel: @"4",
-                          FBSDKAppEventParameterNameDescription: @"Player level 4"},
-                        @{FBSDKAppEventParameterNameLevel: @"5",
-                          FBSDKAppEventParameterNameDescription: @"Player level 5"}];
+                          FBSDKAppEventParameterNameDescription: @"Player level 3"}];
         }
             break;
         case AppEventAchievement:
@@ -153,28 +130,20 @@
                            FBSDKAppEventParameterNameDescription: @"150 Gems - Green Armor",
                            FBSDKAppEventParameterNameContentType: @"Hard Currency",
                            FBSDKAppEventParameterNameNumItems: @"1",
-                           @"Value":@150},
+                           @"Value":@150,
+                           FBSDKAppEventParameterNameLevel:@"10"},
                          @{FBSDKAppEventParameterNameContentID: @"20002",
                            FBSDKAppEventParameterNameDescription: @"350 Gems - Lightning Shoe",
                            FBSDKAppEventParameterNameContentType: @"Hard Currency",
                            FBSDKAppEventParameterNameNumItems: @"1",
-                           @"Value":@350},
+                           @"Value":@350,
+                           FBSDKAppEventParameterNameLevel:@"20"},
                          @{FBSDKAppEventParameterNameContentID: @"20003",
                            FBSDKAppEventParameterNameDescription: @"200 Gems - Magic Helm",
                            FBSDKAppEventParameterNameContentType: @"Hard Currency",
                            FBSDKAppEventParameterNameNumItems: @"1",
-                           @"Value":@200},
-                         @{FBSDKAppEventParameterNameContentID: @"20004",
-                           FBSDKAppEventParameterNameDescription: @"900 Gems - Crystal Sword",
-                           FBSDKAppEventParameterNameContentType: @"Hard Currency",
-                           FBSDKAppEventParameterNameNumItems: @"1",
-                           @"Value":@900},
-                         @{FBSDKAppEventParameterNameContentID: @"20005",
-                           FBSDKAppEventParameterNameDescription: @"450 Gems - Gold Shield",
-                           FBSDKAppEventParameterNameContentType: @"Hard Currency",
-                           FBSDKAppEventParameterNameNumItems: @"1",
-                           @"Value":@450},
-                         ];
+                           @"Value":@200,
+                           FBSDKAppEventParameterNameLevel:@"50"}];
         }
             break;
         case AppEventMapLevel:
@@ -187,13 +156,7 @@
                           FBSDKAppEventParameterNameDescription: @"Map level 2"},
                         @{FBSDKAppEventParameterNameLevel: @"3",
                           @"StarScore": @"3",
-                          FBSDKAppEventParameterNameDescription: @"Map level 3"},
-                        @{FBSDKAppEventParameterNameLevel: @"4",
-                          @"StarScore": @"4",
-                          FBSDKAppEventParameterNameDescription: @"Map level 4"},
-                        @{FBSDKAppEventParameterNameLevel: @"5",
-                          @"StarScore": @"5",
-                          FBSDKAppEventParameterNameDescription: @"Map level 5"}];
+                          FBSDKAppEventParameterNameDescription: @"Map level 3"}];
 
         }
             break;
@@ -203,28 +166,20 @@
                           FBSDKAppEventParameterNameDescription: @"150 Coins - Green Armor Fragment",
                           FBSDKAppEventParameterNameContentType: @"Soft Currency",
                           FBSDKAppEventParameterNameNumItems: @"5",
-                          @"Value":@150},
+                          @"Value":@150,
+                          FBSDKAppEventParameterNameLevel:@"10"},
                         @{FBSDKAppEventParameterNameContentID: @"30002",
                           FBSDKAppEventParameterNameDescription: @"350 Coins - Lightning Shoe Fragment",
                           FBSDKAppEventParameterNameContentType: @"Soft Currency",
                           FBSDKAppEventParameterNameNumItems: @"4",
-                          @"Value":@350},
+                          @"Value":@350,
+                          FBSDKAppEventParameterNameLevel:@"20"},
                         @{FBSDKAppEventParameterNameContentID: @"30003",
                           FBSDKAppEventParameterNameDescription: @"200 Coins - Magic Helm Fragment",
                           FBSDKAppEventParameterNameContentType: @"Soft Currency",
                           FBSDKAppEventParameterNameNumItems: @"3",
-                          @"Value":@200},
-                        @{FBSDKAppEventParameterNameContentID: @"30004",
-                          FBSDKAppEventParameterNameDescription: @"900 Coins - Crystal Sword Fragment",
-                          FBSDKAppEventParameterNameContentType: @"Soft Currency",
-                          FBSDKAppEventParameterNameNumItems: @"2",
-                          @"Value":@900},
-                        @{FBSDKAppEventParameterNameContentID: @"30005",
-                          FBSDKAppEventParameterNameDescription: @"450 Coins - Gold Shield Fragment",
-                          FBSDKAppEventParameterNameContentType: @"Soft Currency",
-                          FBSDKAppEventParameterNameNumItems: @"1",
-                          @"Value":@450},
-                        ];
+                          @"Value":@200,
+                          FBSDKAppEventParameterNameLevel:@"50"}];
         }
             break;
         default:

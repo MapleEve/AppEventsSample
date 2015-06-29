@@ -42,12 +42,8 @@
         {
             content = @[@{FBSDKAppEventParameterNameRegistrationMethod: @"Facebook",
                           FBSDKAppEventParameterNameDescription: @"Facebook"},
-                        @{FBSDKAppEventParameterNameRegistrationMethod: @"Google+",
-                          FBSDKAppEventParameterNameDescription: @"Google+"},
                         @{FBSDKAppEventParameterNameRegistrationMethod: @"Email",
-                          FBSDKAppEventParameterNameDescription: @"Email"},
-                        @{FBSDKAppEventParameterNameRegistrationMethod: @"Guest",
-                          FBSDKAppEventParameterNameDescription: @"Guest"}];
+                          FBSDKAppEventParameterNameDescription: @"Email"}];
         }
             break;
             
@@ -71,7 +67,6 @@
             
         case AppEventViewedContent:
         case AppEventAddedToWishlist:
-        case AppEventAddedToCart:
         case AppEventRated:
         {
             content = @[@{FBSDKAppEventParameterNameContentID: @"10001",
@@ -90,6 +85,7 @@
             break;
             
         case AppEventPurchase:
+        case AppEventAddedToCart:
         {
             content = @[@{FBSDKAppEventParameterNameContentID: @"10001",
                           FBSDKAppEventParameterNameContentType: @"Shirts",
