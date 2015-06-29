@@ -40,10 +40,10 @@
             return FBSDKAppEventNameSpentCredits;
             break;
         case AppEventMapLevel:
-            return @"MapCompleted";
+            return @"Map Level Completed";
             break;
         case AppEventSpendSoftCurrency:
-            return @"SpendSoftCurrency";
+            return @"Spend Soft Currency";
             break;
             
         //apps
