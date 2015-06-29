@@ -72,7 +72,40 @@
     }
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self loadButtons];
+}
+
+- (void)loadButtons
+{
+}
+
+- (void)addButton:(AppEvent)appEvent buttonText:(NSString*)text
+{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:text forState:UIControlStateNormal];
+    CGRect viewRect = _contentView.frame;
+    
+    button.frame = CGRectMake(viewRect.size.width / 2.0 - 80.0, _lastY, 160.0, 40.0);
+    _lastY += 50.0;
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor brownColor];
+    [button.layer setMasksToBounds:YES];
+    [button.layer setCornerRadius:10.0f];
+    button.tag = appEvent;
+    [[self contentView] addSubview:button];
+}
+
 - (IBAction)handleEvent:(id)sender
+{
+    _lastButtonTag = [sender tag];
+    [self performSegueWithIdentifier:@"appevent" sender:self];
+}
+
+- (void) buttonClicked:(UIButton*)sender
 {
     _lastButtonTag = [sender tag];
     [self performSegueWithIdentifier:@"appevent" sender:self];

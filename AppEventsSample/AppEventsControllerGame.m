@@ -11,9 +11,23 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @interface AppEventsControllerGame ()
+
 @end
 
 @implementation AppEventsControllerGame
+
+- (void)loadButtons
+{
+    self.lastY = 0.0;
+    [self addButton:AppEventRegistration buttonText:@"Registation"];
+    [self addButton:AppEventTutorial buttonText:@"Tutorial"];
+    [self addButton:AppEventPurchase buttonText:@"Purchase"];
+    [self addButton:AppEventPlayerLevel buttonText:@"Level Achieved"];
+    [self addButton:AppEventMapLevel buttonText:@"Map Complete"];
+    [self addButton:AppEventAchievement buttonText:@"Achievement"];
+    [self addButton:AppEventSpendHardCurrency buttonText:@"Spend Credits"];
+    [self addButton:AppEventSpendSoftCurrency buttonText:@"Spend Soft Currency"];
+}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -22,28 +36,33 @@
 
     switch ([self lastButtonTag]) {
         /*
-         * provide description for most app events you are logging, by doing this, cross functional teams can easily look up
-         * the right param to use for strategy or marketing
+         * provide description param for most app events you are logging, by doing this,
+         * cross functional teams can easily look up the right param to use for strategy and marketing
          */
         case AppEventRegistration:
         {
-            content = @[@{FBSDKAppEventParameterNameRegistrationMethod: @"Facebook",
+            content = @[@{FBSDKAppEventParameterNameRegistrationMethod: @"R1001",
                           FBSDKAppEventParameterNameDescription: @"Facebook"},
-                        @{FBSDKAppEventParameterNameRegistrationMethod: @"Google Play",
+                        @{FBSDKAppEventParameterNameRegistrationMethod: @"R1002",
                           FBSDKAppEventParameterNameDescription: @"Google Play"},
-                        @{FBSDKAppEventParameterNameRegistrationMethod: @"Google+",
+                        @{FBSDKAppEventParameterNameRegistrationMethod: @"R1003",
                           FBSDKAppEventParameterNameDescription: @"Google+"},
-                        @{FBSDKAppEventParameterNameRegistrationMethod: @"Amazon",
+                        @{FBSDKAppEventParameterNameRegistrationMethod: @"R1004",
                           FBSDKAppEventParameterNameDescription: @"Amazon"},
-                        @{FBSDKAppEventParameterNameRegistrationMethod: @"App Store",
-                          FBSDKAppEventParameterNameDescription: @"App Store"},
-                        @{FBSDKAppEventParameterNameRegistrationMethod: @"Email",
+                        @{FBSDKAppEventParameterNameRegistrationMethod: @"R1005",
+                          FBSDKAppEventParameterNameDescription: @"Apple Game Center"},
+                        @{FBSDKAppEventParameterNameRegistrationMethod: @"R1006",
                           FBSDKAppEventParameterNameDescription: @"Email"},
-                        @{FBSDKAppEventParameterNameRegistrationMethod: @"Guest",
+                        @{FBSDKAppEventParameterNameRegistrationMethod: @"R1009",
                           FBSDKAppEventParameterNameDescription: @"Guest"}];
         }
             break;
-            
+        
+        /*
+         * By logging tutorial steps, you can easily create funnel to check the conversion rate of
+         * each tutorial steps. You can also create Cohorts between tutorial steps to know the how long
+         * it takes your player to proceed in tutorial
+         */
         case AppEventTutorial:
         {
             content = @[@{FBSDKAppEventParameterNameContentID: @"1",
@@ -123,6 +142,11 @@
                           FBSDKAppEventParameterNameDescription: @"Shared an app event"}];
         }
             break;
+        /*
+         * It is important to separate in game spending by hard currency and soft currency
+         * You will be able to view the breakdown view of this event easier by doing this
+         * 
+         */
         case AppEventSpendHardCurrency:
         {
              content = @[@{FBSDKAppEventParameterNameContentID: @"20001",

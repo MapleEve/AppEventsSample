@@ -28,8 +28,13 @@ typedef NS_ENUM(NSInteger, AppEvent) {
 };
 
 @interface AppEventsController : UiSwipeViewController
-+(NSString*) getEventName:(AppEvent) appEvent;
 @property (nonatomic, strong) IBOutlet UILabel *eventStatusLabel;
+@property (nonatomic, strong) IBOutlet UIView *contentView;
 @property (nonatomic) AppEvent lastButtonTag;
+@property (nonatomic) float lastY;
++(NSString*) getEventName:(AppEvent) appEvent;
+-(void) buttonClicked:(UIButton*)sender;
+-(void)loadButtons;
+-(void)addButton:(AppEvent)appEvent buttonText:(NSString*)text;
 @end
 

@@ -15,6 +15,19 @@
 
 @implementation AppEventsControllerApp
 
+- (void)loadButtons
+{
+    self.lastY = 0.0;
+    [self addButton:AppEventRegistration buttonText:@"Registation"];
+    [self addButton:AppEventSearched buttonText:@"Search"];
+    [self addButton:AppEventViewedContent buttonText:@"View Content"];
+    [self addButton:AppEventAddedToWishlist buttonText:@"Add to Wishlist"];
+    [self addButton:AppEventAddedToCart buttonText:@"Add to Cart"];
+    [self addButton:AppEventPurchase buttonText:@"Purchase"];
+    [self addButton:AppEventAddedPaymentInfo buttonText:@"Add Payment Info"];
+    [self addButton:AppEventRated buttonText:@"Rated"];
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     PickerViewController *vc = segue.destinationViewController;
