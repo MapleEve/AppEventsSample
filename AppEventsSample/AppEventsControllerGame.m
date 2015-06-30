@@ -54,6 +54,9 @@
          * By logging tutorial steps, you can easily create funnel to check the conversion rate of
          * each tutorial step. You can also create Cohorts between tutorial steps to know the how long
          * it takes your player to proceed in tutorial
+         *
+         * Additionally developers can add elapsed time to verify difficulty/time consuming
+         * on tutorial steps
          */
         case AppEventTutorial:
         {
@@ -124,6 +127,7 @@
          * It is important to separate in game spending by hard currency and soft currency
          * You will be able to view the breakdown view of this event easier by doing this
          * 
+         * Please note the default spent credit event is intended to use it only for hard credit.
          */
         case AppEventSpendHardCurrency:
         {
