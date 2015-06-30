@@ -2,8 +2,7 @@
 //  AppDelegate.h
 //  platformTest
 //
-//  Created by Pu Guannan on 4/7/15.
-//  Copyright (c) 2015 Pu Guannan. All rights reserved.
+//  FBSDKCoreKit framework is the only required framework to log App Events
 //
 
 #import <UIKit/UIKit.h>

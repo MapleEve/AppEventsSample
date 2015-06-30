@@ -52,7 +52,7 @@
         
         /*
          * By logging tutorial steps, you can easily create funnel to check the conversion rate of
-         * each tutorial steps. You can also create Cohorts between tutorial steps to know the how long
+         * each tutorial step. You can also create Cohorts between tutorial steps to know the how long
          * it takes your player to proceed in tutorial
          */
         case AppEventTutorial:
@@ -95,6 +95,7 @@
         {
             /*
              * please note the default level achieved event is intended to use for player level
+             * achievement only
              */
             
             content = @[@{FBSDKAppEventParameterNameLevel: @"1",
@@ -150,12 +151,18 @@
         {
             content = @[@{FBSDKAppEventParameterNameLevel: @"1",
                           @"StarScore": @"1",
+                          @"BoosterUsed": @"ExtendTime",
+                          FBSDKAppEventParameterNameSuccess: @"1",
                           FBSDKAppEventParameterNameDescription: @"Map level 1"},
                         @{FBSDKAppEventParameterNameLevel: @"2",
-                          @"StarScore": @"2",
+                          @"StarScore": @"3",
+                          @"BoosterUsed": @"None",
+                          FBSDKAppEventParameterNameSuccess: @"1",
                           FBSDKAppEventParameterNameDescription: @"Map level 2"},
                         @{FBSDKAppEventParameterNameLevel: @"3",
-                          @"StarScore": @"3",
+                          @"StarScore": @"0",
+                          @"BoosterUsed": @"Hint",
+                          FBSDKAppEventParameterNameSuccess: @"0",
                           FBSDKAppEventParameterNameDescription: @"Map level 3"}];
 
         }

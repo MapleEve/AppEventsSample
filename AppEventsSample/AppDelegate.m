@@ -53,6 +53,8 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    // make sure activateApp is logged at the very beginning every time app becomes active
     [FBSDKAppEvents activateApp];
 }
 
