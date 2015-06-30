@@ -147,6 +147,14 @@
                            FBSDKAppEventParameterNameLevel:@"50"}];
         }
             break;
+        /*
+         * There are two ways to log success/failure status for map levels:
+         * 1) Use boolean parameter for success/failure
+         * 2) define a new event such as “Map Level Achieved Failed”.
+         * If you choose to define a new event, you can use these two events straightforwardly
+         * in Analytics. Please keep in mind that the total number of unique events
+         * should be less than 300.
+         */
         case AppEventMapLevel:
         {
             content = @[@{FBSDKAppEventParameterNameLevel: @"1",
